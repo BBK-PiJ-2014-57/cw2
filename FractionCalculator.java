@@ -223,13 +223,20 @@ public class FractionCalculator{
         while(!fcalc.quit)
         {
             Scanner sc = new Scanner(System.in);
-            input = sc.nextLine();
+            if(sc.hasNextLine())
+            {
+                input = sc.nextLine();
+            }
+            else
+            {
+                input = "q";
+            }
             fcalc.evaluate(fcalc.getStoredValue(), input);
             if(!fcalc.quit)
             {
                 result = fcalc.getStoredValue();
                 System.out.println(result.toString());
-            }
+            }    
         }
         System.out.println("Goodbye.");
     }
