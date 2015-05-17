@@ -1,0 +1,1 @@
+The values of double fields 'amount' on Point 4 were not correct. I recommend that you re-do the exercise, checking carefully the execution line by line. Agree a face-to-face check with Keith or Sergio if you think that can help.
